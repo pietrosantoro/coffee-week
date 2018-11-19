@@ -1,0 +1,7 @@
+<nav class="toolbar" id="toolbar">
+  <a href="#toolbar" (click)="home()">Home</a>
+  <a href="#toolbar" (click)="list_employees()">Employees</a>
+  <a href="#toolbar" (click)="list_giv_rec()">Giver-Receiver</a>
+  <button class="random" (click)="getRandom()" [disabled]="randomCreated">Random Assignment</button>
+</nav>
+<app-content [user]="users" [pair]="pairs" [showEmployees]="showEmployees" [showHome]="showHome" [showPair]="showPair" [randomCreated]="randomCreated"></app-content>

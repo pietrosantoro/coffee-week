@@ -1,0 +1,20 @@
+<div class="box">
+
+  <div class="employees" *ngIf="showEmployees">
+    <div class="name">{{user.name.first}} {{user.name.last}}</div>
+    <div class="department">{{user.department}}</div>
+    <hr>
+    <div class="information">
+      <div class="location">{{user.location}}</div>
+      <div class="email">{{user.email}}</div>
+      <div class="phone">{{user.phone}}</div>
+    </div>
+  </div>
+
+  <div class="pair" *ngIf="showPair">
+      <div class="name_giver">{{pair.giver.name.first}} {{pair.giver.name.last}}</div>
+      <div class="text">will bring coffee to</div>
+      <div class=" name_receiver">{{pair.receiver.name.first}} {{pair.receiver.name.last}}</div>
+  </div>
+
+</div>

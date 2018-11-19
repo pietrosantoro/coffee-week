@@ -1,0 +1,20 @@
+<div class="content">
+  <div class="home" *ngIf="showHome">
+      <h2>Welcome to coffee week. </h2>
+      <p style="font-size:120%;font-style: italic">"Good ideas start with brainstorming. Great ideas start with coffee"</p>
+      <hr>
+      <br>
+      Click the button if you want to start the random assignment.
+  </div>
+  <div class="employees" *ngIf="showEmployees">
+    <h2>This is a list of all our Employees.</h2>
+      <app-paring *ngFor="let users of user" [user]="users" [showEmployees] = "showEmployees" [showPair] = "showPair"></app-paring>
+  </div>
+  <div class="pairs" *ngIf="showPair">
+      <h2>This is a list of all giver-receiver pairs.</h2>
+      <p *ngIf="!randomCreated">The pairs have not yet been created. Click the button to start the random assignment</p>
+      <app-paring *ngFor="let pairs of pair" [pair]="pairs" [showEmployees] = "showEmployees" [showPair] = "showPair"></app-paring>
+  </div>
+  
+ 
+</div>
