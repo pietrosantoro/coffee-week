@@ -11,8 +11,8 @@ import { EmployeeService } from '../employee.service';
 export class ToolbarComponent implements OnInit {
 
   public employees: IEmployee[];
-  protected users: User[];
-  private pairs: Pair[] = [];
+  public users: User[];
+  public pairs: Pair[] = [];
   public showHome = true;
   public showEmployees = false;
   public showPair = false;
