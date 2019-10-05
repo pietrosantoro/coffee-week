@@ -11,6 +11,7 @@
   </div>
   <div class="employees" *ngIf="showEmployees">
     <h2>This is a list of all our Employees.</h2>
+    <p>List of Employees is taken by this <a href="https://hbc-frontend-challenge.hbccommon.private.hbc.com/coffee-week/users">JSON</a> file</p>
       <app-paring *ngFor="let users of user" [user]="users" [showEmployees] = "showEmployees" [showPair] = "showPair"></app-paring>
   </div>
   <div class="pairs" *ngIf="showPair">
